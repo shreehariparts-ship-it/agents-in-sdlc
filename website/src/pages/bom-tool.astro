@@ -1,0 +1,981 @@
+---
+/**
+ * Canon Aluminium Window/Door BOM Tool
+ * Trishul Engineering — Layout → Series → BOM selection workflow
+ *
+ * Standalone full-HTML page (no Starlight layout) using vanilla JS only.
+ * Data stubs live in /public/data/; swap fetch URLs with ERPNext REST endpoints.
+ */
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase.slice(0, -1) : rawBase;
+---
+
+<!doctype html>
+<html lang="en" data-base={base}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canon BOM Tool – Trishul Engineering</title>
+  <style>
+    /* ── Reset & tokens ─────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --c-brand:   #1a4f8a;
+      --c-brand2:  #2663a8;
+      --c-accent:  #e8821b;
+      --c-bg:      #f0f4f8;
+      --c-surface: #ffffff;
+      --c-border:  #d1d9e0;
+      --c-text:    #1c2b3a;
+      --c-muted:   #6b7a8d;
+      --c-danger:  #c0392b;
+      --c-success: #27ae60;
+      --r:         6px;
+      --shadow:    0 1px 4px rgba(0,0,0,.12);
+    }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--c-bg); color: var(--c-text); font-size: 14px; }
+
+    /* ── Header ─────────────────────────────────────── */
+    .site-header {
+      background: var(--c-brand);
+      color: #fff;
+      padding: .75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,.25);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .site-header h1 { font-size: 1.05rem; font-weight: 700; letter-spacing: .02em; }
+    .site-header .sub { font-size: .75rem; opacity: .8; margin-left: .25rem; }
+    .site-header a.back { color: rgba(255,255,255,.75); text-decoration: none; font-size: .8rem; margin-left: auto; }
+    .site-header a.back:hover { color: #fff; }
+
+    /* ── Step indicator ─────────────────────────────── */
+    .steps { display: flex; gap: 0; background: var(--c-surface); border-bottom: 2px solid var(--c-brand); }
+    .step-btn {
+      flex: 1; padding: .6rem .5rem; text-align: center; cursor: pointer;
+      font-size: .75rem; font-weight: 600; color: var(--c-muted);
+      border: none; background: none; border-right: 1px solid var(--c-border);
+      transition: background .15s;
+    }
+    .step-btn:last-child { border-right: none; }
+    .step-btn.active { color: var(--c-brand); background: #e8f0fb; border-bottom: 2px solid var(--c-brand); margin-bottom: -2px; }
+    .step-btn.done   { color: var(--c-success); }
+    .step-num { display: inline-block; width: 1.4em; height: 1.4em; border-radius: 50%; background: var(--c-border); color: var(--c-muted); font-size: .7rem; line-height: 1.4em; text-align: center; margin-right: .3em; }
+    .step-btn.active .step-num { background: var(--c-brand); color: #fff; }
+    .step-btn.done   .step-num { background: var(--c-success); color: #fff; }
+
+    /* ── Layout grid ─────────────────────────────────── */
+    .main-layout { display: grid; grid-template-columns: 1fr 340px; gap: 1rem; padding: 1rem 1.5rem; align-items: start; }
+    @media (max-width: 900px) { .main-layout { grid-template-columns: 1fr; } }
+    .col-main { display: flex; flex-direction: column; gap: 1rem; }
+
+    /* ── Cards ───────────────────────────────────────── */
+    .card { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r); box-shadow: var(--shadow); }
+    .card-header { padding: .75rem 1rem; border-bottom: 1px solid var(--c-border); display: flex; align-items: center; justify-content: space-between; }
+    .card-header h2 { font-size: .9rem; font-weight: 700; color: var(--c-brand); }
+    .card-body { padding: 1rem; }
+
+    /* ── Upload zone ─────────────────────────────────── */
+    .upload-zone {
+      border: 2px dashed var(--c-brand2); border-radius: var(--r); padding: 2rem 1rem;
+      text-align: center; cursor: pointer; color: var(--c-brand2); transition: background .2s;
+      background: #f7f9fc;
+    }
+    .upload-zone:hover, .upload-zone.drag-over { background: #e8f0fb; }
+    .upload-zone input[type=file] { display: none; }
+    .upload-icon { font-size: 2rem; margin-bottom: .5rem; }
+    .upload-hint { font-size: .8rem; color: var(--c-muted); margin-top: .35rem; }
+
+    /* ── Layout preview ──────────────────────────────── */
+    .layout-preview-wrap { position: relative; background: #f7f9fc; border: 1px solid var(--c-border); border-radius: var(--r); overflow: hidden; min-height: 180px; display: flex; align-items: center; justify-content: center; }
+    .layout-preview-wrap img { max-width: 100%; max-height: 320px; display: block; }
+    .no-image-msg { color: var(--c-muted); font-size: .85rem; }
+
+    /* ── Panel table ─────────────────────────────────── */
+    .panel-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+    .panel-table th { background: var(--c-bg); padding: .45rem .6rem; text-align: left; font-weight: 600; font-size: .75rem; color: var(--c-muted); border-bottom: 2px solid var(--c-border); }
+    .panel-table td { padding: .4rem .6rem; border-bottom: 1px solid var(--c-border); vertical-align: middle; }
+    .panel-table tr.selected-row td { background: #e8f0fb; }
+    .panel-table tr:hover td { background: #f7f9fc; }
+    .panel-table tr.selected-row:hover td { background: #dde8f7; }
+    .series-badge {
+      display: inline-block; padding: .15em .55em; border-radius: 999px;
+      background: var(--c-brand); color: #fff; font-size: .7rem; font-weight: 600;
+      white-space: nowrap; max-width: 130px; overflow: hidden; text-overflow: ellipsis;
+    }
+    .series-badge.none { background: var(--c-border); color: var(--c-muted); }
+    .editable-input {
+      border: 1px solid transparent; border-radius: 3px; padding: .15rem .3rem;
+      background: transparent; width: 100%; font-size: .82rem; color: var(--c-text);
+    }
+    .editable-input:hover { border-color: var(--c-border); background: #fff; }
+    .editable-input:focus { outline: none; border-color: var(--c-brand2); background: #fff; }
+    select.editable-input { cursor: pointer; }
+    .dim-input { width: 70px; }
+
+    /* ── Buttons ─────────────────────────────────────── */
+    .btn { display: inline-flex; align-items: center; gap: .35em; padding: .45rem .9rem; border-radius: var(--r); border: none; cursor: pointer; font-size: .82rem; font-weight: 600; transition: filter .15s; }
+    .btn:hover { filter: brightness(1.08); }
+    .btn-primary { background: var(--c-brand); color: #fff; }
+    .btn-accent  { background: var(--c-accent); color: #fff; }
+    .btn-outline { background: transparent; color: var(--c-brand); border: 1.5px solid var(--c-brand); }
+    .btn-danger  { background: transparent; color: var(--c-danger); border: 1.5px solid var(--c-danger); padding: .3rem .6rem; font-size: .75rem; }
+    .btn-success { background: var(--c-success); color: #fff; }
+    .btn-sm      { padding: .28rem .6rem; font-size: .75rem; }
+
+    /* ── Sidebar ─────────────────────────────────────── */
+    .sidebar { position: sticky; top: 56px; }
+    .series-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; max-height: 260px; overflow-y: auto; }
+    .series-card {
+      border: 2px solid var(--c-border); border-radius: var(--r); cursor: pointer;
+      padding: .5rem; text-align: center; transition: border-color .15s, background .15s;
+    }
+    .series-card:hover { border-color: var(--c-brand2); background: #f0f6ff; }
+    .series-card.selected { border-color: var(--c-brand); background: #e8f0fb; }
+    .series-card .img-box { width: 100%; height: 52px; background: #e9edf2; border-radius: 3px; display: flex; align-items: center; justify-content: center; margin-bottom: .3rem; overflow: hidden; }
+    .series-card .img-box img { max-width: 100%; max-height: 52px; }
+    .series-card .img-box .no-img { font-size: .6rem; color: var(--c-muted); }
+    .series-card .sc-name { font-size: .7rem; font-weight: 600; color: var(--c-text); line-height: 1.2; }
+    .series-card .sc-depth { font-size: .65rem; color: var(--c-muted); }
+
+    /* ── Items list ───────────────────────────────────── */
+    .items-list { max-height: 280px; overflow-y: auto; display: flex; flex-direction: column; gap: .35rem; }
+    .item-row {
+      display: flex; align-items: center; gap: .5rem; padding: .4rem .5rem;
+      border: 1px solid var(--c-border); border-radius: 4px; cursor: pointer;
+      transition: background .15s;
+    }
+    .item-row:hover { background: #f7f9fc; }
+    .item-row.checked { background: #e8f0fb; border-color: var(--c-brand2); }
+    .item-img { width: 42px; height: 32px; border-radius: 3px; background: #e9edf2; flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .item-img img { max-width: 42px; max-height: 32px; }
+    .item-img .no-img { font-size: .55rem; color: var(--c-muted); text-align: center; line-height: 1.1; }
+    .item-name { flex: 1; font-size: .78rem; font-weight: 500; }
+    .item-cat  { font-size: .65rem; color: var(--c-muted); }
+    .item-check { width: 16px; height: 16px; flex-shrink: 0; accent-color: var(--c-brand); }
+
+    /* ── Accessories table ───────────────────────────── */
+    .acc-table { width: 100%; border-collapse: collapse; font-size: .8rem; }
+    .acc-table th { background: var(--c-bg); padding: .4rem .5rem; text-align: left; font-size: .72rem; font-weight: 600; color: var(--c-muted); border-bottom: 2px solid var(--c-border); }
+    .acc-table td { padding: .35rem .5rem; border-bottom: 1px solid var(--c-border); vertical-align: middle; }
+    .acc-table .qty-input { width: 52px; border: 1px solid var(--c-border); border-radius: 3px; padding: .15rem .3rem; text-align: center; font-size: .8rem; }
+
+    /* ── BOM output ──────────────────────────────────── */
+    #bom-section { display: none; }
+    .bom-table-wrap { overflow-x: auto; }
+    .bom-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+    .bom-table th { background: var(--c-brand); color: #fff; padding: .5rem .7rem; text-align: left; font-size: .75rem; font-weight: 600; }
+    .bom-table td { padding: .4rem .7rem; border-bottom: 1px solid var(--c-border); }
+    .bom-table tr:nth-child(even) td { background: #f7f9fc; }
+    .bom-table .cat-badge { font-size: .65rem; padding: .1em .45em; border-radius: 999px; font-weight: 600; background: #e2eaf5; color: var(--c-brand); }
+    .bom-actions { display: flex; gap: .75rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+    .bom-note { font-size: .75rem; color: var(--c-muted); font-style: italic; }
+
+    /* ── Empty / loading states ─────────────────────── */
+    .empty-hint { text-align: center; color: var(--c-muted); padding: 1.5rem; font-size: .82rem; }
+    .loading-spinner { display: inline-block; width: 18px; height: 18px; border: 2px solid var(--c-border); border-top-color: var(--c-brand); border-radius: 50%; animation: spin .6s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Utility ─────────────────────────────────────── */
+    .hidden { display: none !important; }
+    .tag-info { font-size: .68rem; background: #fff3cd; color: #856404; padding: .15em .5em; border-radius: 999px; font-weight: 600; }
+    .flex-gap { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+    hr { border: none; border-top: 1px solid var(--c-border); }
+    @media print {
+      .site-header, .steps, .col-main, .sidebar, .bom-actions .btn { display: none !important; }
+      #bom-section { display: block !important; }
+      .main-layout { display: block; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ───────────────────────────────────────────── -->
+<header class="site-header">
+  <div>
+    <h1>🪟 Canon Aluminium BOM Tool
+      <span class="sub">Trishul Engineering</span>
+    </h1>
+  </div>
+  <span class="tag-info">STUB DATA</span>
+  <a class="back" href={base + '/'}>← Workshop home</a>
+</header>
+
+<!-- ── Step indicator ───────────────────────────────────── -->
+<nav class="steps" id="steps-nav" aria-label="Steps">
+  <button class="step-btn active" data-step="1"><span class="step-num">1</span>Upload Layout</button>
+  <button class="step-btn"       data-step="2"><span class="step-num">2</span>Configure Panels</button>
+  <button class="step-btn"       data-step="3"><span class="step-num">3</span>Series &amp; Items</button>
+  <button class="step-btn"       data-step="4"><span class="step-num">4</span>Generate BOM</button>
+</nav>
+
+<!-- ── Main layout ──────────────────────────────────────── -->
+<div class="main-layout">
+
+  <!-- LEFT: main content column -->
+  <div class="col-main">
+
+    <!-- STEP 1: Upload -->
+    <div class="card" id="step1-card">
+      <div class="card-header">
+        <h2>Step 1 — Upload Window / Door Layout</h2>
+      </div>
+      <div class="card-body">
+        <div class="upload-zone" id="upload-zone" role="button" tabindex="0" aria-label="Upload layout image">
+          <div class="upload-icon">📐</div>
+          <div><strong>Drag &amp; drop</strong> a sketch, drawing, or photograph here</div>
+          <div class="upload-hint">Accepted: JPG, PNG, PDF (multi-page), WEBP — or click to browse</div>
+          <input type="file" id="file-input" accept="image/*,application/pdf" multiple />
+        </div>
+        <div id="layout-preview-container" class="layout-preview-wrap hidden" style="margin-top:.75rem;">
+          <img id="layout-img" src="" alt="Uploaded layout" />
+        </div>
+        <div style="margin-top:.75rem;" class="flex-gap">
+          <button class="btn btn-primary" id="btn-detect">🔍 Detect Panels (Auto)</button>
+          <button class="btn btn-outline" id="btn-skip-upload">Skip — Enter panels manually</button>
+          <span id="detect-status"></span>
+        </div>
+        <p style="margin-top:.5rem; font-size:.75rem; color:var(--c-muted);">
+          ⚠️ <strong>Stub:</strong> Auto-detect sends the image to a mock function. 
+          Replace with your AI / ERPNext vision endpoint to do real panel detection.
+        </p>
+      </div>
+    </div>
+
+    <!-- STEP 2: Panels table -->
+    <div class="card" id="step2-card">
+      <div class="card-header">
+        <h2>Step 2 — Panel Configuration</h2>
+        <button class="btn btn-outline btn-sm" id="btn-add-panel">+ Add Panel</button>
+      </div>
+      <div class="card-body" style="padding:0;">
+        <div id="panels-table-wrap">
+          <div class="empty-hint" id="no-panels-hint">No panels yet — upload a layout or click "Add Panel".</div>
+          <table class="panel-table hidden" id="panels-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Type</th>
+                <th>Position</th>
+                <th>Width (mm)</th>
+                <th>Height (mm)</th>
+                <th>Series</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="panels-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 3: Review -->
+    <div class="card hidden" id="step3-card">
+      <div class="card-header">
+        <h2>Step 3 — Review Selections</h2>
+      </div>
+      <div class="card-body">
+        <div id="review-content">
+          <p class="empty-hint">Configure panels in Step 2 and select series from the sidebar.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- STEP 4: BOM -->
+    <div class="card" id="bom-section" style="display:none;">
+      <div class="card-header">
+        <h2>Step 4 — Bill of Materials</h2>
+      </div>
+      <div class="card-body">
+        <div class="bom-actions">
+          <button class="btn btn-success" id="btn-download-csv">⬇ Download CSV</button>
+          <button class="btn btn-outline" id="btn-print-bom">🖨 Print BOM</button>
+          <span class="bom-note">Part numbers are not shown on screen — included in CSV export only.</span>
+        </div>
+        <div class="bom-table-wrap">
+          <table class="bom-table" id="bom-table">
+            <thead>
+              <tr>
+                <th>Panel</th>
+                <th>Type</th>
+                <th>Series</th>
+                <th>Item Name</th>
+                <th>Category</th>
+                <th>Qty</th>
+                <th>Unit</th>
+              </tr>
+            </thead>
+            <tbody id="bom-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /col-main -->
+
+  <!-- RIGHT: sidebar -->
+  <aside class="sidebar">
+
+    <!-- Series selector -->
+    <div class="card" id="series-card">
+      <div class="card-header">
+        <h2>Series Selector</h2>
+        <span id="sidebar-panel-label" style="font-size:.72rem;color:var(--c-muted);">Select a panel →</span>
+      </div>
+      <div class="card-body" id="series-card-body">
+        <p class="empty-hint" id="series-empty-hint">Click a panel row to see matching Canon series.</p>
+        <div class="hidden" id="series-selector-inner">
+          <p style="font-size:.75rem;color:var(--c-muted);margin-bottom:.5rem;">
+            Showing series for <strong id="series-filter-label">–</strong>
+          </p>
+          <div class="series-grid" id="series-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Items list for selected series -->
+    <div class="card" style="margin-top:.75rem;" id="items-card">
+      <div class="card-header">
+        <h2>Series Items</h2>
+        <span id="items-series-label" style="font-size:.72rem;color:var(--c-muted);">–</span>
+      </div>
+      <div class="card-body" id="items-card-body">
+        <p class="empty-hint" id="items-empty-hint">Select a series above to view its profile components.</p>
+        <div class="hidden" id="items-list-inner">
+          <div class="items-list" id="items-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accessories -->
+    <div class="card" style="margin-top:.75rem;" id="acc-card">
+      <div class="card-header">
+        <h2>Accessories</h2>
+        <span style="font-size:.72rem;color:var(--c-muted);">Auto-attached by panel type</span>
+      </div>
+      <div class="card-body" id="acc-card-body">
+        <p class="empty-hint" id="acc-empty-hint">Select a panel to view standard accessories.</p>
+        <div class="hidden" id="acc-table-wrap">
+          <table class="acc-table" id="acc-table">
+            <thead>
+              <tr><th>Accessory</th><th>Qty</th><th>Unit</th></tr>
+            </thead>
+            <tbody id="acc-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Generate BOM button -->
+    <div style="margin-top:.75rem;">
+      <button class="btn btn-accent" style="width:100%;justify-content:center;font-size:.95rem;padding:.65rem 1rem;" id="btn-generate-bom">
+        📋 Generate BOM
+      </button>
+    </div>
+
+  </aside><!-- /sidebar -->
+
+</div><!-- /main-layout -->
+
+<script>
+// ══════════════════════════════════════════════════════════════════
+// Canon BOM Tool — Vanilla JS
+// ══════════════════════════════════════════════════════════════════
+
+const BASE = (document.documentElement.dataset.base || '').replace(/\/$/, '');
+
+// ── Application state ────────────────────────────────────────────
+let state = {
+  step: 1,
+  layoutImage: null,     // data URL
+  panels: [],            // Panel[]
+  selectedPanelId: null,
+  seriesData: null,      // loaded from canon-series.json
+  accessoryData: null,   // loaded from accessory-map.json
+  bom: [],
+  loading: false,
+};
+
+// Panel shape: { id, type, position, width, height, seriesId, selectedItems: [{partNumber,qty}], accessories: [{partNumber,qty,name,unit}] }
+let _nextPanelNum = 1;
+function mkId() { return 'p' + Date.now() + Math.random().toString(36).slice(2, 6); }
+
+// ── Data loading ─────────────────────────────────────────────────
+// STUB: Replace these fetch URLs with ERPNext REST API endpoints.
+// e.g. fetch(`${ERPNEXT_BASE}/api/resource/Item?filters=...`)
+async function loadData() {
+  try {
+    const [seriesResp, accResp] = await Promise.all([
+      fetch(`${BASE}/data/canon-series.json`),
+      fetch(`${BASE}/data/accessory-map.json`),
+    ]);
+    state.seriesData   = await seriesResp.json();
+    state.accessoryData = await accResp.json();
+  } catch (e) {
+    console.error('BOM Tool: failed to load data', e);
+  }
+}
+
+// ── Panel helpers ────────────────────────────────────────────────
+const PANEL_TYPES  = ['Sliding', 'Fixed', 'Projecting', 'Swing Door', 'Sliding Door'];
+const POSITIONS    = ['Left', 'Centre', 'Right', 'Top', 'Bottom', 'Full'];
+
+function defaultAccessories(panelType) {
+  if (!state.accessoryData) return [];
+  const map = state.accessoryData.byType || {};
+  const list = map[panelType] || [];
+  return list.map(a => ({ partNumber: a.partNumber, name: a.name, unit: a.unit, qty: a.defaultQty }));
+}
+
+function autoSuggestSeries(panelType) {
+  if (!state.seriesData) return [];
+  // Map panel type → series type in data
+  const typeMap = {
+    'Sliding':      ['Sliding'],
+    'Fixed':        ['Fixed'],
+    'Projecting':   ['Projecting'],
+    'Swing Door':   ['Swing Door'],
+    'Sliding Door': ['Sliding Door'],
+  };
+  const wanted = typeMap[panelType] || [];
+  return state.seriesData.series.filter(s => wanted.includes(s.type));
+}
+
+function addPanel(type = 'Sliding') {
+  const panel = {
+    id: mkId(),
+    type,
+    position: POSITIONS[Math.min(_nextPanelNum - 1, POSITIONS.length - 1)],
+    width: 900,
+    height: 1200,
+    seriesId: null,
+    selectedItems: [],
+    accessories: defaultAccessories(type),
+  };
+  state.panels.push(panel);
+  _nextPanelNum++;
+  renderPanelTable();
+  showStep(2);
+}
+
+function removePanel(id) {
+  state.panels = state.panels.filter(p => p.id !== id);
+  if (state.selectedPanelId === id) state.selectedPanelId = null;
+  renderPanelTable();
+  renderSidebar();
+}
+
+function updatePanel(id, field, value) {
+  const p = state.panels.find(p => p.id === id);
+  if (!p) return;
+  const prev = p[field];
+  p[field] = value;
+  if (field === 'type' && value !== prev) {
+    // Re-attach accessories and clear series when type changes
+    p.accessories = defaultAccessories(value);
+    p.seriesId = null;
+    p.selectedItems = [];
+  }
+  renderPanelTableRow(p);
+  if (state.selectedPanelId === id) renderSidebar();
+}
+
+function selectPanel(id) {
+  state.selectedPanelId = (state.selectedPanelId === id) ? null : id;
+  renderPanelTable();
+  renderSidebar();
+}
+
+function assignSeries(panelId, seriesId) {
+  const p = state.panels.find(p => p.id === panelId);
+  if (!p) return;
+  p.seriesId = seriesId;
+  p.selectedItems = []; // reset item selection on series change
+  // Auto-select all items by default (user can deselect)
+  const series = state.seriesData.series.find(s => s.id === seriesId);
+  if (series) {
+    p.selectedItems = series.items.map(it => ({ partNumber: it.partNumber, qty: 1 }));
+  }
+  renderPanelTableRow(p);
+  renderSidebar();
+}
+
+function toggleItem(panelId, partNumber) {
+  const p = state.panels.find(p => p.id === panelId);
+  if (!p) return;
+  const idx = p.selectedItems.findIndex(i => i.partNumber === partNumber);
+  if (idx >= 0) {
+    p.selectedItems.splice(idx, 1);
+  } else {
+    p.selectedItems.push({ partNumber, qty: 1 });
+  }
+  renderItemsList(p);
+}
+
+function updateAccessoryQty(panelId, partNumber, qty) {
+  const p = state.panels.find(p => p.id === panelId);
+  if (!p) return;
+  const acc = p.accessories.find(a => a.partNumber === partNumber);
+  if (acc) acc.qty = Math.max(0, parseInt(qty, 10) || 0);
+}
+
+// ── STUB: mock panel detection ────────────────────────────────────
+// Replace this function body with a real API call to an AI vision
+// service or ERPNext endpoint that analyses the layout image.
+function detectPanelsFromImage(imageDataUrl) {
+  // STUB: returns two default panels; real implementation would
+  // analyse the image and infer panel count, positions, and sizes.
+  return [
+    { type: 'Sliding',  position: 'Left',   width: 900,  height: 1200 },
+    { type: 'Fixed',    position: 'Right',  width: 600,  height: 1200 },
+  ];
+}
+
+// ── BOM generation ───────────────────────────────────────────────
+function generateBOM() {
+  const bom = [];
+  for (const panel of state.panels) {
+    const series = panel.seriesId
+      ? state.seriesData.series.find(s => s.id === panel.seriesId)
+      : null;
+    const seriesName = series ? series.name : '(No series selected)';
+
+    // Profile items
+    for (const sel of panel.selectedItems) {
+      const item = series ? series.items.find(it => it.partNumber === sel.partNumber) : null;
+      if (item) {
+        bom.push({
+          panelPosition: panel.position,
+          panelType:     panel.type,
+          seriesName,
+          itemName:      item.name,
+          category:      item.category,
+          qty:           sel.qty,
+          unit:          item.unit,
+          partNumber:    item.partNumber,  // kept for CSV, hidden on screen
+        });
+      }
+    }
+
+    // Accessories
+    for (const acc of panel.accessories) {
+      if (acc.qty > 0) {
+        bom.push({
+          panelPosition: panel.position,
+          panelType:     panel.type,
+          seriesName,
+          itemName:      acc.name,
+          category:      'Accessory',
+          qty:           acc.qty,
+          unit:          acc.unit,
+          partNumber:    acc.partNumber,
+        });
+      }
+    }
+  }
+  state.bom = bom;
+  return bom;
+}
+
+// ── CSV export ───────────────────────────────────────────────────
+function downloadCSV() {
+  const rows = [
+    ['Panel Position','Panel Type','Series','Item Name','Category','Qty','Unit','Part Number'],
+    ...state.bom.map(r => [
+      r.panelPosition, r.panelType, r.seriesName, r.itemName, r.category,
+      r.qty, r.unit, r.partNumber,
+    ]),
+  ];
+  const csv = rows.map(r => r.map(v => `"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = 'trishul-bom.csv';
+  a.click(); URL.revokeObjectURL(url);
+}
+
+// ── Render helpers ───────────────────────────────────────────────
+function imgBox(imageUrl, label, w = 42, h = 32) {
+  if (imageUrl) {
+    return `<div class="item-img"><img src="${imageUrl}" alt="${label}" /></div>`;
+  }
+  return `<div class="item-img" style="width:${w}px;height:${h}px;"><span class="no-img">📷<br>No<br>Image</span></div>`;
+}
+
+function renderPanelTable() {
+  const tbody = document.getElementById('panels-tbody');
+  const table = document.getElementById('panels-table');
+  const hint  = document.getElementById('no-panels-hint');
+
+  if (state.panels.length === 0) {
+    table.classList.add('hidden');
+    hint.classList.remove('hidden');
+    return;
+  }
+  table.classList.remove('hidden');
+  hint.classList.add('hidden');
+
+  tbody.innerHTML = '';
+  state.panels.forEach((p, i) => {
+    const tr = document.createElement('tr');
+    tr.id = `row-${p.id}`;
+    if (p.id === state.selectedPanelId) tr.classList.add('selected-row');
+    tr.innerHTML = renderPanelRowInner(p, i);
+    tbody.appendChild(tr);
+  });
+  attachPanelRowListeners();
+}
+
+function renderPanelTableRow(p) {
+  const tr = document.getElementById(`row-${p.id}`);
+  if (!tr) { renderPanelTable(); return; }
+  const idx = state.panels.indexOf(p);
+  tr.innerHTML = renderPanelRowInner(p, idx);
+  if (p.id === state.selectedPanelId) tr.classList.add('selected-row');
+  attachPanelRowListeners();
+}
+
+function renderPanelRowInner(p, i) {
+  const seriesName = p.seriesId
+    ? (state.seriesData?.series.find(s => s.id === p.seriesId)?.name || '–')
+    : null;
+  const badgeHtml = seriesName
+    ? `<span class="series-badge" title="${seriesName}">${seriesName}</span>`
+    : `<span class="series-badge none">Not set</span>`;
+  const typeOpts = PANEL_TYPES.map(t =>
+    `<option value="${t}" ${p.type === t ? 'selected' : ''}>${t}</option>`
+  ).join('');
+  const posOpts = POSITIONS.map(pos =>
+    `<option value="${pos}" ${p.position === pos ? 'selected' : ''}>${pos}</option>`
+  ).join('');
+  return `
+    <td>${i + 1}</td>
+    <td>
+      <select class="editable-input" data-field="type" data-id="${p.id}">${typeOpts}</select>
+    </td>
+    <td>
+      <select class="editable-input" data-field="position" data-id="${p.id}">${posOpts}</select>
+    </td>
+    <td><input class="editable-input dim-input" type="number" min="100" max="6000" data-field="width" data-id="${p.id}" value="${p.width}" /></td>
+    <td><input class="editable-input dim-input" type="number" min="100" max="6000" data-field="height" data-id="${p.id}" value="${p.height}" /></td>
+    <td>${badgeHtml}</td>
+    <td>
+      <button class="btn btn-outline btn-sm" data-action="select" data-id="${p.id}" title="Select panel to configure series">
+        ${p.id === state.selectedPanelId ? '✓ Active' : 'Configure'}
+      </button>
+      <button class="btn btn-danger btn-sm" data-action="remove" data-id="${p.id}" title="Remove panel" style="margin-left:.25rem;">✕</button>
+    </td>
+  `;
+}
+
+function attachPanelRowListeners() {
+  document.querySelectorAll('[data-field]').forEach(el => {
+    el.onchange = null;
+    el.onchange = e => {
+      const { field, id } = e.target.dataset;
+      updatePanel(id, field, e.target.type === 'number' ? Number(e.target.value) : e.target.value);
+    };
+  });
+  document.querySelectorAll('[data-action]').forEach(btn => {
+    btn.onclick = null;
+    btn.onclick = e => {
+      const { action, id } = btn.dataset;
+      if (action === 'select') selectPanel(id);
+      if (action === 'remove') removePanel(id);
+    };
+  });
+}
+
+function renderSidebar() {
+  const panel = state.panels.find(p => p.id === state.selectedPanelId);
+
+  // Series selector
+  const emptyHint   = document.getElementById('series-empty-hint');
+  const inner       = document.getElementById('series-selector-inner');
+  const filterLabel = document.getElementById('series-filter-label');
+  const panelLabel  = document.getElementById('sidebar-panel-label');
+  const grid        = document.getElementById('series-grid');
+
+  if (!panel) {
+    emptyHint.classList.remove('hidden');
+    inner.classList.add('hidden');
+    renderItemsList(null);
+    renderAccessories(null);
+    panelLabel.textContent = 'Select a panel →';
+    return;
+  }
+
+  panelLabel.textContent = `Panel: ${panel.position} (${panel.type})`;
+  emptyHint.classList.add('hidden');
+  inner.classList.remove('hidden');
+  filterLabel.textContent = panel.type;
+
+  const matching = autoSuggestSeries(panel.type);
+  grid.innerHTML = '';
+  if (matching.length === 0) {
+    grid.innerHTML = `<p class="empty-hint" style="grid-column:1/-1;">No series found for type "${panel.type}".</p>`;
+  } else {
+    matching.forEach(s => {
+      const div = document.createElement('div');
+      div.className = 'series-card' + (s.id === panel.seriesId ? ' selected' : '');
+      div.title = s.description;
+      div.innerHTML = `
+        <div class="img-box">
+          ${s.imageUrl ? `<img src="${s.imageUrl}" alt="${s.name}" />` : `<span class="no-img">📷 No Image</span>`}
+        </div>
+        <div class="sc-name">${s.name}</div>
+        <div class="sc-depth">${s.profileDepth_mm} mm</div>
+      `;
+      div.onclick = () => assignSeries(panel.id, s.id);
+      grid.appendChild(div);
+    });
+  }
+
+  renderItemsList(panel);
+  renderAccessories(panel);
+}
+
+function renderItemsList(panel) {
+  const emptyHint = document.getElementById('items-empty-hint');
+  const inner     = document.getElementById('items-list-inner');
+  const list      = document.getElementById('items-list');
+  const label     = document.getElementById('items-series-label');
+
+  if (!panel || !panel.seriesId) {
+    emptyHint.classList.remove('hidden');
+    inner.classList.add('hidden');
+    label.textContent = '–';
+    return;
+  }
+  const series = state.seriesData.series.find(s => s.id === panel.seriesId);
+  if (!series) return;
+
+  label.textContent = series.name;
+  emptyHint.classList.add('hidden');
+  inner.classList.remove('hidden');
+  list.innerHTML = '';
+
+  // Group items: show shutters & beading first (per requirement)
+  const priorityOrder = ['Shutter', 'Bead', 'Interlock', 'Frame', 'Mullion', 'Hardware', 'Seal'];
+  const grouped = [...series.items].sort((a, b) => {
+    const ai = priorityOrder.indexOf(a.category);
+    const bi = priorityOrder.indexOf(b.category);
+    return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi);
+  });
+
+  grouped.forEach(item => {
+    const isChecked = panel.selectedItems.some(i => i.partNumber === item.partNumber);
+    const div = document.createElement('div');
+    div.className = 'item-row' + (isChecked ? ' checked' : '');
+    div.innerHTML = `
+      ${imgBox(item.imageUrl, item.name)}
+      <div style="flex:1;">
+        <div class="item-name">${item.name}</div>
+        <div class="item-cat">${item.category} · ${item.unit}</div>
+      </div>
+      <input type="checkbox" class="item-check" ${isChecked ? 'checked' : ''} aria-label="Select ${item.name}" />
+    `;
+    div.onclick = (e) => {
+      if (e.target.tagName !== 'INPUT') {
+        toggleItem(panel.id, item.partNumber);
+      }
+    };
+    div.querySelector('input').onchange = () => toggleItem(panel.id, item.partNumber);
+    list.appendChild(div);
+  });
+}
+
+function renderAccessories(panel) {
+  const emptyHint = document.getElementById('acc-empty-hint');
+  const tableWrap = document.getElementById('acc-table-wrap');
+  const tbody     = document.getElementById('acc-tbody');
+
+  if (!panel || panel.accessories.length === 0) {
+    emptyHint.classList.remove('hidden');
+    tableWrap.classList.add('hidden');
+    return;
+  }
+  emptyHint.classList.add('hidden');
+  tableWrap.classList.remove('hidden');
+  tbody.innerHTML = '';
+
+  panel.accessories.forEach(acc => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${acc.name}</td>
+      <td><input class="qty-input" type="number" min="0" max="999" value="${acc.qty}" data-pn="${acc.partNumber}" /></td>
+      <td>${acc.unit}</td>
+    `;
+    tr.querySelector('.qty-input').onchange = e =>
+      updateAccessoryQty(panel.id, acc.partNumber, e.target.value);
+    tbody.appendChild(tr);
+  });
+}
+
+function renderBOM() {
+  const bom    = state.bom;
+  const tbody  = document.getElementById('bom-tbody');
+  const section = document.getElementById('bom-section');
+
+  if (!bom || bom.length === 0) {
+    section.style.display = 'none';
+    return;
+  }
+  section.style.display = '';
+
+  tbody.innerHTML = '';
+  bom.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${row.panelPosition}</td>
+      <td>${row.panelType}</td>
+      <td>${row.seriesName}</td>
+      <td><strong>${row.itemName}</strong></td>
+      <td><span class="cat-badge">${row.category}</span></td>
+      <td>${row.qty}</td>
+      <td>${row.unit}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+  section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderReview() {
+  const div = document.getElementById('review-content');
+  if (state.panels.length === 0) {
+    div.innerHTML = '<p class="empty-hint">No panels configured yet.</p>';
+    return;
+  }
+  div.innerHTML = state.panels.map(p => {
+    const series = p.seriesId ? state.seriesData?.series.find(s => s.id === p.seriesId) : null;
+    const itemCount = p.selectedItems.length;
+    const accCount  = p.accessories.filter(a => a.qty > 0).length;
+    return `<div style="margin-bottom:.75rem;padding:.5rem .75rem;background:#f7f9fc;border-radius:4px;border-left:3px solid ${series ? 'var(--c-brand)' : 'var(--c-border)'};">
+      <strong>${p.position} – ${p.type}</strong>
+      (${p.width} × ${p.height} mm)<br/>
+      Series: <strong>${series ? series.name : '⚠ Not assigned'}</strong><br/>
+      <span style="font-size:.75rem;color:var(--c-muted);">${itemCount} profile items · ${accCount} accessories selected</span>
+    </div>`;
+  }).join('');
+}
+
+// ── Steps navigation ─────────────────────────────────────────────
+function showStep(n) {
+  state.step = n;
+  document.querySelectorAll('.step-btn').forEach(btn => {
+    const s = Number(btn.dataset.step);
+    btn.classList.toggle('active', s === n);
+    btn.classList.toggle('done', s < n);
+  });
+  // Show/hide relevant cards
+  document.getElementById('step1-card').style.display = n === 1 ? '' : '';  // always visible
+  document.getElementById('step3-card').classList.toggle('hidden', n < 3);
+  if (n === 3) renderReview();
+  if (n === 4) {
+    generateBOM();
+    renderBOM();
+  }
+}
+
+// ── Upload zone interactions ─────────────────────────────────────
+function handleFile(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    state.layoutImage = e.target.result;
+    const img = document.getElementById('layout-img');
+    const container = document.getElementById('layout-preview-container');
+    img.src = state.layoutImage;
+    container.classList.remove('hidden');
+    document.getElementById('detect-status').textContent = `Loaded: ${file.name}`;
+  };
+  if (file.type === 'application/pdf') {
+    // PDF: show placeholder message (real implementation would use PDF.js or server-side)
+    state.layoutImage = '';
+    document.getElementById('layout-preview-container').classList.remove('hidden');
+    document.getElementById('layout-img').alt = '';
+    document.getElementById('layout-img').src = '';
+    document.getElementById('layout-img').style.display = 'none';
+    document.getElementById('layout-preview-container').innerHTML =
+      '<p style="padding:1rem;color:var(--c-muted);">📄 PDF uploaded: ' + file.name + '<br><small>STUB: PDF rendering not implemented. Panel detection available.</small></p>';
+    document.getElementById('detect-status').textContent = `Loaded: ${file.name}`;
+  } else {
+    reader.readAsDataURL(file);
+  }
+}
+
+function initUploadZone() {
+  const zone  = document.getElementById('upload-zone');
+  const input = document.getElementById('file-input');
+
+  zone.onclick = () => input.click();
+  zone.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') input.click(); };
+  input.onchange = e => handleFile(e.target.files[0]);
+
+  zone.ondragover  = e => { e.preventDefault(); zone.classList.add('drag-over'); };
+  zone.ondragleave = ()  => zone.classList.remove('drag-over');
+  zone.ondrop = e => {
+    e.preventDefault();
+    zone.classList.remove('drag-over');
+    handleFile(e.dataTransfer.files[0]);
+  };
+
+  document.getElementById('btn-detect').onclick = () => {
+    const status = document.getElementById('detect-status');
+    status.innerHTML = '<span class="loading-spinner"></span> Detecting…';
+    setTimeout(() => {
+      // STUB: mock detection with a small delay
+      const detected = detectPanelsFromImage(state.layoutImage);
+      state.panels = [];
+      _nextPanelNum = 1;
+      detected.forEach(d => {
+        state.panels.push({
+          id: mkId(), type: d.type, position: d.position,
+          width: d.width, height: d.height, seriesId: null,
+          selectedItems: [], accessories: defaultAccessories(d.type),
+        });
+        _nextPanelNum++;
+      });
+      status.textContent = `✓ ${detected.length} panel(s) detected (stub).`;
+      renderPanelTable();
+      showStep(2);
+    }, 800);
+  };
+
+  document.getElementById('btn-skip-upload').onclick = () => {
+    addPanel('Sliding');
+    showStep(2);
+  };
+}
+
+// ── Step nav button clicks ────────────────────────────────────────
+document.getElementById('steps-nav').onclick = e => {
+  const btn = e.target.closest('.step-btn');
+  if (btn) showStep(Number(btn.dataset.step));
+};
+
+document.getElementById('btn-add-panel').onclick = () => addPanel('Sliding');
+
+document.getElementById('btn-generate-bom').onclick = () => {
+  generateBOM();
+  renderBOM();
+  showStep(4);
+};
+
+document.getElementById('btn-download-csv').onclick = downloadCSV;
+
+document.getElementById('btn-print-bom').onclick = () => window.print();
+
+// ── Boot ─────────────────────────────────────────────────────────
+(async () => {
+  await loadData();
+  initUploadZone();
+  renderPanelTable();
+  renderSidebar();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "_stub": true,
+  "_note": "STUB: Placeholder accessory map. Replace partNumber values with ERPNext item codes before going live. Cross-verify each partNumber against the ERP item master.",
+  "_erpEndpoint": "TODO: GET /api/resource/Item?filters=[[\"item_group\",\"=\",\"Accessories\"]]",
+  "version": "1.0.0",
+  "byType": {
+    "Sliding": [
+      { "partNumber": "ACC-SW-HDL-01", "name": "Aluminium Handle (Sliding)", "description": "Recessed pull handle for sliding shutters", "imageUrl": null, "defaultQty": 1, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-SW-LCK-01", "name": "Security Lock (Sliding)", "description": "Cam-action security lock for sliding window", "imageUrl": null, "defaultQty": 1, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-SW-WS-01", "name": "Weather Strip (Pile)", "description": "Polypropylene pile weather sealing strip", "imageUrl": null, "defaultQty": 1, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-SW-RLR-01", "name": "Nylon Roller Set", "description": "Adjustable nylon roller for smooth sliding", "imageUrl": null, "defaultQty": 2, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-SW-MTH-01", "name": "Mosquito Mesh Frame", "description": "Aluminium frame with fibreglass mesh", "imageUrl": null, "defaultQty": 1, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-SW-SCR-01", "name": "Self-Drilling Screw (Al)", "description": "3.9×25 mm aluminium self-drilling screw", "imageUrl": null, "defaultQty": 20, "unit": "nos", "_stub": true }
+    ],
+    "Fixed": [
+      { "partNumber": "ACC-FW-SLT-01", "name": "Structural Sealant (Neutral)", "description": "Neutral cure silicone sealant 300 ml", "imageUrl": null, "defaultQty": 1, "unit": "tube", "_stub": true },
+      { "partNumber": "ACC-FW-SPR-01", "name": "Setting Block (EPDM)", "description": "70 Shore A EPDM setting block 100×25×5 mm", "imageUrl": null, "defaultQty": 4, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-FW-GLP-01", "name": "Glazing Pad", "description": "EPDM glazing pad 50×20×5 mm", "imageUrl": null, "defaultQty": 4, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-FW-SCR-01", "name": "Self-Drilling Screw (Al)", "description": "3.9×25 mm aluminium self-drilling screw", "imageUrl": null, "defaultQty": 16, "unit": "nos", "_stub": true }
+    ],
+    "Projecting": [
+      { "partNumber": "ACC-PJ-FRI-01", "name": "Friction Stay 8\" (SS)", "description": "Stainless steel friction stay arm", "imageUrl": null, "defaultQty": 2, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-PJ-HDL-01", "name": "Cockspur Handle", "description": "Die-cast handle for projecting window", "imageUrl": null, "defaultQty": 1, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-PJ-WS-01", "name": "EPDM Rubber Seal", "description": "Co-extruded EPDM perimeter seal", "imageUrl": null, "defaultQty": 1, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-PJ-SCR-01", "name": "Self-Drilling Screw (Al)", "description": "3.9×25 mm aluminium self-drilling screw", "imageUrl": null, "defaultQty": 16, "unit": "nos", "_stub": true }
+    ],
+    "Swing Door": [
+      { "partNumber": "ACC-SDOOR-HNG-01", "name": "Butt Hinge 4\" (SS)", "description": "304 SS butt hinge, heavy duty", "imageUrl": null, "defaultQty": 3, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-SDOOR-MLK-01", "name": "Mortise Lock Set", "description": "63 mm backset mortise lock with SS handles", "imageUrl": null, "defaultQty": 1, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-SDOOR-DCS-01", "name": "Door Closer (Floor Spring)", "description": "EN 3 rated floor spring door closer", "imageUrl": null, "defaultQty": 1, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-SDOOR-STP-01", "name": "Door Stop (Floor)", "description": "Rubber-tipped floor-mounted door stop", "imageUrl": null, "defaultQty": 1, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-SDOOR-WS-01", "name": "Door Seal Set", "description": "Co-extruded EPDM door perimeter seal", "imageUrl": null, "defaultQty": 1, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-SDOOR-SCR-01", "name": "Self-Drilling Screw (Al)", "description": "3.9×32 mm aluminium self-drilling screw", "imageUrl": null, "defaultQty": 24, "unit": "nos", "_stub": true }
+    ],
+    "Sliding Door": [
+      { "partNumber": "ACC-SLDR-HDL-01", "name": "Sliding Door Handle (SS)", "description": "Flush pull handle 300 mm SS", "imageUrl": null, "defaultQty": 1, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-SLDR-LCK-01", "name": "Sliding Door Lock (Multipoint)", "description": "Multipoint hook lock for sliding doors", "imageUrl": null, "defaultQty": 1, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-SLDR-WHL-01", "name": "Stainless Steel Roller", "description": "SS roller with ball bearing, 60 kg capacity", "imageUrl": null, "defaultQty": 4, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-SLDR-GD-01", "name": "Bottom Guide", "description": "Adjustable bottom guide for sliding door", "imageUrl": null, "defaultQty": 2, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-SLDR-WS-01", "name": "Bottom Brush Seal", "description": "Polypropylene bottom brush seal 2 m", "imageUrl": null, "defaultQty": 1, "unit": "set", "_stub": true },
+      { "partNumber": "ACC-SLDR-ALF-01", "name": "Anti-Lift Device", "description": "Screw-in anti-lift block for sliding door", "imageUrl": null, "defaultQty": 2, "unit": "nos", "_stub": true },
+      { "partNumber": "ACC-SLDR-SCR-01", "name": "Self-Drilling Screw (Al)", "description": "3.9×32 mm aluminium self-drilling screw", "imageUrl": null, "defaultQty": 24, "unit": "nos", "_stub": true }
+    ]
+  }
+}

@@ -1,0 +1,5342 @@
+{
+  "_stub": true,
+  "_note": "STUB: Placeholder Canon Series\u2013Item mapping for Trishul Engineering. All partNumber values are stubs \u2014 replace with actual ERPNext item codes. Cross-verify by partNumber field before live use.",
+  "_erpEndpoint": "TODO: GET /api/resource/Item?filters=[[\"item_group\",\"in\",[\"Aluminium Section\",\"Accessories\"]]]&fields=[\"item_code\",\"item_name\",\"item_group\",\"stock_uom\",\"image\"]",
+  "version": "1.0.0",
+  "lastUpdated": "2026-07-23",
+  "totalSeries": 49,
+  "totalItems": 527,
+  "series": [
+    {
+      "id": "SW-001",
+      "name": "2-Track Sliding Window 38mm Economy",
+      "type": "Sliding",
+      "profileDepth_mm": 38,
+      "description": "Economy 2-track sliding window; 38 mm outer frame depth. Suitable for light residential use.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-001",
+      "items": [
+        {
+          "partNumber": "CNAL00101",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00101 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00102",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00102 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00103",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00103 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00104",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00104 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00105",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00105 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00106",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00106 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00107",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00107 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00108",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00108 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00109",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00109 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00110",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00110 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00111",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00111 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00112",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00112 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00113",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00113 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-002",
+      "name": "2-Track Sliding Window 38mm Standard",
+      "type": "Sliding",
+      "profileDepth_mm": 38,
+      "description": "Standard 2-track sliding window; 38 mm outer frame with improved interlock profile.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-002",
+      "items": [
+        {
+          "partNumber": "CNAL00201",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00201 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00202",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00202 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00203",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00203 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00204",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00204 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00205",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00205 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00206",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00206 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00207",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00207 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00208",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00208 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00209",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00209 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00210",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00210 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00211",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00211 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00212",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00212 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00213",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00213 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-003",
+      "name": "2-Track Sliding Window 44mm Standard",
+      "type": "Sliding",
+      "profileDepth_mm": 44,
+      "description": "Standard 2-track sliding window; 44 mm outer frame depth. Popular mid-range residential profile.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-003",
+      "items": [
+        {
+          "partNumber": "CNAL00301",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00301 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00302",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00302 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00303",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00303 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00304",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00304 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00305",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00305 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00306",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00306 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00307",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00307 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00308",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00308 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00309",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00309 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00310",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00310 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00311",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00311 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00312",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00312 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00313",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00313 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-004",
+      "name": "2-Track Sliding Window 44mm Heavy",
+      "type": "Sliding",
+      "profileDepth_mm": 44,
+      "description": "Heavy-duty 2-track; 44 mm frame with reinforced bottom track for larger pane sizes.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-004",
+      "items": [
+        {
+          "partNumber": "CNAL00401",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00401 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00402",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00402 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00403",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00403 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00404",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00404 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00405",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00405 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00406",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00406 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00407",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00407 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00408",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00408 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00409",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00409 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00410",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00410 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00411",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00411 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00412",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00412 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00413",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00413 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-005",
+      "name": "2-Track Sliding Window 48mm Standard",
+      "type": "Sliding",
+      "profileDepth_mm": 48,
+      "description": "2-track sliding; 48 mm frame depth, wider shutter stile for improved aesthetics.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-005",
+      "items": [
+        {
+          "partNumber": "CNAL00501",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00501 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00502",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00502 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00503",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00503 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00504",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00504 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00505",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00505 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00506",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00506 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00507",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00507 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00508",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00508 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00509",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00509 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00510",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00510 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00511",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00511 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00512",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00512 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00513",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00513 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-006",
+      "name": "2-Track Sliding Window 50mm Premium",
+      "type": "Sliding",
+      "profileDepth_mm": 50,
+      "description": "Premium 2-track; 50 mm frame, brushed anodised finish option, thermal break ready.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-006",
+      "items": [
+        {
+          "partNumber": "CNAL00601",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00601 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00602",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00602 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00603",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00603 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00604",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00604 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00605",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00605 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00606",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00606 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00607",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00607 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00608",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00608 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00609",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00609 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00610",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00610 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00611",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00611 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00612",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00612 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00613",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00613 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-007",
+      "name": "3-Track Sliding Window 55mm Standard",
+      "type": "Sliding",
+      "profileDepth_mm": 55,
+      "description": "3-track system; 55 mm outer frame accommodating 3 shutters \u2014 2 operable, 1 fixed.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-007",
+      "items": [
+        {
+          "partNumber": "CNAL00701",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00701 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00702",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00702 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00703",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00703 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00704",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00704 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00705",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00705 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00706",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00706 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00707",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00707 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00708",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00708 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00709",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00709 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00710",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00710 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00711",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00711 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00712",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00712 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00713",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00713 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00714",
+          "name": "Centre Mullion / Coupler Profile",
+          "category": "Mullion",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00714 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-008",
+      "name": "3-Track Sliding Window 60mm Standard",
+      "type": "Sliding",
+      "profileDepth_mm": 60,
+      "description": "3-track; 60 mm outer frame with heavy-duty interlock and centre mullion.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-008",
+      "items": [
+        {
+          "partNumber": "CNAL00801",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00801 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00802",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00802 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00803",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00803 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00804",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00804 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00805",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00805 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00806",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00806 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00807",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00807 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00808",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00808 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00809",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00809 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00810",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00810 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00811",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00811 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00812",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00812 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00813",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00813 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00814",
+          "name": "Centre Mullion / Coupler Profile",
+          "category": "Mullion",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00814 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-009",
+      "name": "3-Track Sliding Window 65mm Heavy",
+      "type": "Sliding",
+      "profileDepth_mm": 65,
+      "description": "Heavy-duty 3-track; 65 mm frame, reinforced bottom rail, suitable for large openings.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-009",
+      "items": [
+        {
+          "partNumber": "CNAL00901",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00901 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00902",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00902 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00903",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00903 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00904",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00904 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00905",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00905 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00906",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00906 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00907",
+          "name": "Shutter Stile (Meeting / Interlock Side)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00907 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00908",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00908 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00909",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00909 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00910",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00910 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00911",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00911 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00912",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00912 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00913",
+          "name": "Latch / Lock Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00913 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00914",
+          "name": "Centre Mullion / Coupler Profile",
+          "category": "Mullion",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00914 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-010",
+      "name": "4-Track Sliding Window 70mm Standard",
+      "type": "Sliding",
+      "profileDepth_mm": 70,
+      "description": "4-track system; 70 mm outer frame, 4 shutters, ideal for wide panoramic openings.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-010",
+      "items": [
+        {
+          "partNumber": "CNAL01001",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01001 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01002",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01002 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01003",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01003 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01004",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01004 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01005",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01005 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01006",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01006 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01007",
+          "name": "Shutter Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01007 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01008",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01008 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01009",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01009 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01010",
+          "name": "Centre Mullion / Coupler Profile",
+          "category": "Mullion",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01010 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01011",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01011 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01012",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01012 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01013",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01013 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-011",
+      "name": "4-Track Sliding Window 80mm Heavy",
+      "type": "Sliding",
+      "profileDepth_mm": 80,
+      "description": "Heavy-duty 4-track; 80 mm frame with stainless-steel guide rails.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-011",
+      "items": [
+        {
+          "partNumber": "CNAL01101",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01101 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01102",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01102 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01103",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01103 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01104",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01104 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01105",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01105 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01106",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01106 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01107",
+          "name": "Shutter Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01107 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01108",
+          "name": "Shutter Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01108 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01109",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01109 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01110",
+          "name": "Centre Mullion / Coupler Profile",
+          "category": "Mullion",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01110 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01111",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01111 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01112",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01112 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01113",
+          "name": "Handle Set (Recessed Pull)",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01113 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-012",
+      "name": "Top Hung Window 25mm",
+      "type": "Projecting",
+      "profileDepth_mm": 25,
+      "description": "Top-hung projecting window; 25 mm section, outward opening vent with friction stay.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-012",
+      "items": [
+        {
+          "partNumber": "CNAL01201",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01201 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01202",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01202 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01203",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01203 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01204",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01204 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01205",
+          "name": "Ventilator Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01205 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01206",
+          "name": "Ventilator Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01206 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01207",
+          "name": "Ventilator Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01207 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01208",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01208 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01209",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01209 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-013",
+      "name": "Top Hung Window 30mm",
+      "type": "Projecting",
+      "profileDepth_mm": 30,
+      "description": "Top-hung; 30 mm section with improved weather sealing for exposed locations.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-013",
+      "items": [
+        {
+          "partNumber": "CNAL01301",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01301 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01302",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01302 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01303",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01303 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01304",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01304 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01305",
+          "name": "Ventilator Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01305 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01306",
+          "name": "Ventilator Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01306 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01307",
+          "name": "Ventilator Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01307 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01308",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01308 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01309",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01309 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-014",
+      "name": "Bottom Hung Window 25mm",
+      "type": "Projecting",
+      "profileDepth_mm": 25,
+      "description": "Bottom-hung hopper window; inward opening vent, 25 mm section.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-014",
+      "items": [
+        {
+          "partNumber": "CNAL01401",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01401 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01402",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01402 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01403",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01403 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01404",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01404 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01405",
+          "name": "Ventilator Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01405 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01406",
+          "name": "Ventilator Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01406 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01407",
+          "name": "Ventilator Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01407 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01408",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01408 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01409",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01409 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-015",
+      "name": "Side Hung (Casement) Window 25mm",
+      "type": "Projecting",
+      "profileDepth_mm": 25,
+      "description": "Side-hung casement; 25 mm section, outward opening, available left or right hand.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-015",
+      "items": [
+        {
+          "partNumber": "CNAL01501",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01501 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01502",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01502 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01503",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01503 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01504",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01504 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01505",
+          "name": "Ventilator Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01505 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01506",
+          "name": "Ventilator Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01506 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01507",
+          "name": "Ventilator Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01507 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01508",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01508 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01509",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01509 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-016",
+      "name": "Slim Line Sliding Window 35mm",
+      "type": "Sliding",
+      "profileDepth_mm": 35,
+      "description": "Slim-line 2-track; 35 mm narrow-section profile for modern minimalist facades.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-016",
+      "items": [
+        {
+          "partNumber": "CNAL01601",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01601 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01602",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01602 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01603",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01603 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01604",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01604 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01605",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01605 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01606",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01606 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01607",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01607 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01608",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01608 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01609",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01609 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01610",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01610 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-017",
+      "name": "Prime Series Sliding Window 44mm",
+      "type": "Sliding",
+      "profileDepth_mm": 44,
+      "description": "Prime 2-track; 44 mm frame, premium surface finish, tighter tolerances.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-017",
+      "items": [
+        {
+          "partNumber": "CNAL01701",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01701 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01702",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01702 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01703",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01703 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01704",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01704 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01705",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01705 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01706",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01706 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01707",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01707 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01708",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01708 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01709",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01709 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01710",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01710 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-018",
+      "name": "Aero Series Sliding Window 48mm",
+      "type": "Sliding",
+      "profileDepth_mm": 48,
+      "description": "Aero 2-track; 48 mm frame with improved drainage channels and aero-profile interlock.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-018",
+      "items": [
+        {
+          "partNumber": "CNAL01801",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01801 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01802",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01802 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01803",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01803 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01804",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01804 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01805",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01805 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01806",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01806 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01807",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01807 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01808",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01808 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01809",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01809 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01810",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01810 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-019",
+      "name": "Mid-Rail Sliding Window 44mm",
+      "type": "Sliding",
+      "profileDepth_mm": 44,
+      "description": "2-track with fixed centre transom/mid-rail; top vent slides, lower light fixed.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-019",
+      "items": [
+        {
+          "partNumber": "CNAL01901",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01901 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01902",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01902 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01903",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01903 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01904",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01904 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01905",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01905 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01906",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01906 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01907",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01907 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01908",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01908 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01909",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01909 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL01910",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL01910 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-020",
+      "name": "Ventilator Sliding Window 38mm",
+      "type": "Sliding",
+      "profileDepth_mm": 38,
+      "description": "Ventilator-style 2-track; narrow fixed outer frame with sliding ventilator shutter.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-020",
+      "items": [
+        {
+          "partNumber": "CNAL02001",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02001 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02002",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02002 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02003",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02003 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02004",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02004 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02005",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02005 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02006",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02006 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02007",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02007 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02008",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02008 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02009",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02009 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02010",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02010 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-021",
+      "name": "Combination Series A (SW + Fixed)",
+      "type": "Sliding",
+      "profileDepth_mm": 44,
+      "description": "Combination unit: 2-track sliding section combined with adjacent fixed light, 44 mm frame.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-021",
+      "items": [
+        {
+          "partNumber": "CNAL02101",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02101 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02102",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02102 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02103",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02103 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02104",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02104 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02105",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02105 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02106",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02106 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02107",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02107 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02108",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02108 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02109",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02109 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02110",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02110 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-022",
+      "name": "Combination Series B (SW + Fixed)",
+      "type": "Sliding",
+      "profileDepth_mm": 48,
+      "description": "Combination unit: 2-track sliding plus wider fixed panel; 48 mm outer frame.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-022",
+      "items": [
+        {
+          "partNumber": "CNAL02201",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02201 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02202",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02202 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02203",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02203 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02204",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02204 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02205",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02205 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02206",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02206 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02207",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02207 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02208",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02208 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02209",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02209 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02210",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02210 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-023",
+      "name": "Arch Profile Sliding Window",
+      "type": "Sliding",
+      "profileDepth_mm": 44,
+      "description": "2-track with curved/arched top frame; 44 mm section, custom radius available.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-023",
+      "items": [
+        {
+          "partNumber": "CNAL02301",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02301 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02302",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02302 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02303",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02303 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02304",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02304 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02305",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02305 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02306",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02306 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02307",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02307 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02308",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02308 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02309",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02309 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02310",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02310 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SW-024",
+      "name": "Economy Louvre Sliding Window",
+      "type": "Sliding",
+      "profileDepth_mm": 38,
+      "description": "Economy sliding with integrated louvre vent panel; 38 mm section.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SW-024",
+      "items": [
+        {
+          "partNumber": "CNAL02401",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02401 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02402",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02402 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02403",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02403 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02404",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02404 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02405",
+          "name": "Shutter Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02405 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02406",
+          "name": "Shutter Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02406 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02407",
+          "name": "Shutter Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02407 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02408",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02408 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02409",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02409 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL02410",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL02410 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "FW-001",
+      "name": "Flat Section Fixed Window 20mm",
+      "type": "Fixed",
+      "profileDepth_mm": 20,
+      "description": "Flat-bar fixed light; 20 mm section, suitable for small fixed panes and fanlights.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series FW-001",
+      "items": [
+        {
+          "partNumber": "CNAL00101",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00101 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00102",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00102 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00103",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00103 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00104",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00104 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00105",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00105 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00106",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00106 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00107",
+          "name": "EPDM Rubber Gasket",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00107 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00108",
+          "name": "Glazing Clip",
+          "category": "Hardware",
+          "unit": "nos",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00108 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "FW-002",
+      "name": "Z-Section Fixed Window 25mm",
+      "type": "Fixed",
+      "profileDepth_mm": 25,
+      "description": "Z-section fixed window; 25 mm depth, classic glazing rebate profile.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series FW-002",
+      "items": [
+        {
+          "partNumber": "CNAL00201",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00201 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00202",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00202 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00203",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00203 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00204",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00204 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00205",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00205 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00206",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00206 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00207",
+          "name": "EPDM Rubber Gasket",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00207 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00208",
+          "name": "Glazing Clip",
+          "category": "Hardware",
+          "unit": "nos",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00208 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "FW-003",
+      "name": "Z-Section Fixed Window 38mm",
+      "type": "Fixed",
+      "profileDepth_mm": 38,
+      "description": "Z-section fixed; 38 mm depth for heavier glass or double-glazing units.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series FW-003",
+      "items": [
+        {
+          "partNumber": "CNAL00301",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00301 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00302",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00302 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00303",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00303 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00304",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00304 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00305",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00305 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00306",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00306 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00307",
+          "name": "EPDM Rubber Gasket",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00307 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00308",
+          "name": "Glazing Clip",
+          "category": "Hardware",
+          "unit": "nos",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00308 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "FW-004",
+      "name": "Deep Section Fixed Window 50mm",
+      "type": "Fixed",
+      "profileDepth_mm": 50,
+      "description": "Deep-section fixed; 50 mm frame for structural glazing or large-format panes.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series FW-004",
+      "items": [
+        {
+          "partNumber": "CNAL00401",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00401 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00402",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00402 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00403",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00403 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00404",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00404 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00405",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00405 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00406",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00406 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00407",
+          "name": "EPDM Rubber Gasket",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00407 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00408",
+          "name": "Glazing Clip",
+          "category": "Hardware",
+          "unit": "nos",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00408 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "FW-005",
+      "name": "Slim Fixed Window 16mm",
+      "type": "Fixed",
+      "profileDepth_mm": 16,
+      "description": "Ultra-slim 16 mm fixed profile; ideal for internal partitions and small fanlights.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series FW-005",
+      "items": [
+        {
+          "partNumber": "CNAL00501",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00501 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00502",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00502 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00503",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00503 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00504",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00504 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00505",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00505 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00506",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00506 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00507",
+          "name": "EPDM Rubber Gasket",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00507 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00508",
+          "name": "Glazing Clip",
+          "category": "Hardware",
+          "unit": "nos",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00508 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "FW-006",
+      "name": "Curtain Wall Fixed Section 50mm",
+      "type": "Fixed",
+      "profileDepth_mm": 50,
+      "description": "Stick-curtain-wall fixed section; 50 mm frame with thermal break and cover cap.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series FW-006",
+      "items": [
+        {
+          "partNumber": "CNAL00601",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00601 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00602",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00602 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00603",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00603 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00604",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00604 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00605",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00605 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00606",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00606 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00607",
+          "name": "EPDM Rubber Gasket",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00607 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00608",
+          "name": "Glazing Clip",
+          "category": "Hardware",
+          "unit": "nos",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00608 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "FW-007",
+      "name": "Partition Fixed Window 38mm",
+      "type": "Fixed",
+      "profileDepth_mm": 38,
+      "description": "Office partition-style fixed window; 38 mm rebate, concealed screw fixing.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series FW-007",
+      "items": [
+        {
+          "partNumber": "CNAL00701",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00701 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00702",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00702 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00703",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00703 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00704",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00704 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00705",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00705 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00706",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00706 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00707",
+          "name": "EPDM Rubber Gasket",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00707 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00708",
+          "name": "Glazing Clip",
+          "category": "Hardware",
+          "unit": "nos",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00708 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "FW-008",
+      "name": "Picture Window Fixed",
+      "type": "Fixed",
+      "profileDepth_mm": 44,
+      "description": "Large-format picture-window fixed frame; 44 mm heavy section for floor-to-ceiling panes.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series FW-008",
+      "items": [
+        {
+          "partNumber": "CNAL00801",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00801 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00802",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00802 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00803",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00803 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00804",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00804 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00805",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00805 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00806",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00806 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00807",
+          "name": "EPDM Rubber Gasket",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00807 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00808",
+          "name": "Glazing Clip",
+          "category": "Hardware",
+          "unit": "nos",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00808 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SD-001",
+      "name": "2-Track Sliding Door 70mm",
+      "type": "Sliding Door",
+      "profileDepth_mm": 70,
+      "description": "Residential 2-track sliding door; 70 mm outer frame, bottom-rolling system.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SD-001",
+      "items": [
+        {
+          "partNumber": "CNAL00101",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00101 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00102",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00102 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00103",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00103 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00104",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00104 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00105",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00105 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00106",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00106 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00107",
+          "name": "Door Leaf Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00107 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00108",
+          "name": "Door Leaf Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00108 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00109",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00109 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00110",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00110 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00111",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00111 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00112",
+          "name": "Roller / Wheel Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00112 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00113",
+          "name": "Bottom Brush Seal",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00113 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SD-002",
+      "name": "2-Track Sliding Door 90mm",
+      "type": "Sliding Door",
+      "profileDepth_mm": 90,
+      "description": "Standard 2-track sliding door; 90 mm wider frame with centre weather bar.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SD-002",
+      "items": [
+        {
+          "partNumber": "CNAL00201",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00201 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00202",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00202 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00203",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00203 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00204",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00204 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00205",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00205 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00206",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00206 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00207",
+          "name": "Door Leaf Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00207 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00208",
+          "name": "Door Leaf Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00208 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00209",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00209 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00210",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00210 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00211",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00211 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00212",
+          "name": "Roller / Wheel Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00212 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00213",
+          "name": "Bottom Brush Seal",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00213 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SD-003",
+      "name": "3-Track Sliding Door 90mm",
+      "type": "Sliding Door",
+      "profileDepth_mm": 90,
+      "description": "3-track sliding door; 90 mm frame, one fixed + two sliding panels.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SD-003",
+      "items": [
+        {
+          "partNumber": "CNAL00301",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00301 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00302",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00302 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00303",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00303 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00304",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00304 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00305",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00305 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00306",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00306 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00307",
+          "name": "Door Leaf Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00307 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00308",
+          "name": "Door Leaf Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00308 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00309",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00309 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00310",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00310 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00311",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00311 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00312",
+          "name": "Roller / Wheel Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00312 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00313",
+          "name": "Bottom Brush Seal",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00313 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SD-004",
+      "name": "Heavy Duty Sliding Door 100mm",
+      "type": "Sliding Door",
+      "profileDepth_mm": 100,
+      "description": "Heavy-duty sliding door; 100 mm frame, top-hung option, for commercial use.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SD-004",
+      "items": [
+        {
+          "partNumber": "CNAL00401",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00401 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00402",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00402 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00403",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00403 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00404",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00404 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00405",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00405 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00406",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00406 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00407",
+          "name": "Door Leaf Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00407 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00408",
+          "name": "Door Leaf Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00408 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00409",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00409 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00410",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00410 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00411",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00411 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00412",
+          "name": "Roller / Wheel Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00412 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00413",
+          "name": "Bottom Brush Seal",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00413 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SD-005",
+      "name": "Patio Sliding Door 70mm",
+      "type": "Sliding Door",
+      "profileDepth_mm": 70,
+      "description": "Patio-style 2-track sliding door; 70 mm slim frame, large glazing area.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SD-005",
+      "items": [
+        {
+          "partNumber": "CNAL00501",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00501 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00502",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00502 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00503",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00503 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00504",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00504 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00505",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00505 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00506",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00506 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00507",
+          "name": "Door Leaf Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00507 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00508",
+          "name": "Door Leaf Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00508 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00509",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00509 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00510",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00510 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00511",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00511 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00512",
+          "name": "Roller / Wheel Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00512 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00513",
+          "name": "Bottom Brush Seal",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00513 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SD-006",
+      "name": "Lift & Slide Door 90mm",
+      "type": "Sliding Door",
+      "profileDepth_mm": 90,
+      "description": "Lift-and-slide mechanism; 90 mm frame, compression seal when closed.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SD-006",
+      "items": [
+        {
+          "partNumber": "CNAL00601",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00601 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00602",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00602 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00603",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00603 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00604",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00604 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00605",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00605 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00606",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00606 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00607",
+          "name": "Door Leaf Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00607 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00608",
+          "name": "Door Leaf Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00608 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00609",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00609 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00610",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00610 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00611",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00611 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00612",
+          "name": "Roller / Wheel Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00612 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00613",
+          "name": "Bottom Brush Seal",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00613 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SD-007",
+      "name": "Sliding Screen Door",
+      "type": "Sliding Door",
+      "profileDepth_mm": 25,
+      "description": "25 mm aluminium frame for fly-screen/mesh sliding panel, used alongside glass sliding door.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SD-007",
+      "items": [
+        {
+          "partNumber": "CNAL00701",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00701 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00702",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00702 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00703",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00703 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00704",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00704 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00705",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00705 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00706",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00706 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00707",
+          "name": "Door Leaf Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00707 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00708",
+          "name": "Door Leaf Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00708 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00709",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00709 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00710",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00710 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00711",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00711 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00712",
+          "name": "Roller / Wheel Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00712 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00713",
+          "name": "Bottom Brush Seal",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00713 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "SD-008",
+      "name": "Economy Sliding Door 60mm",
+      "type": "Sliding Door",
+      "profileDepth_mm": 60,
+      "description": "Economy bottom-rolling sliding door; 60 mm frame for budget residential projects.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series SD-008",
+      "items": [
+        {
+          "partNumber": "CNAL00801",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00801 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00802",
+          "name": "Frame Bottom Rail (with Track)",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00802 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00803",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00803 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00804",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00804 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00805",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00805 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00806",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00806 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00807",
+          "name": "Door Leaf Stile (Meeting)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00807 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00808",
+          "name": "Door Leaf Stile (End)",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00808 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00809",
+          "name": "Interlock Profile",
+          "category": "Interlock",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00809 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00810",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00810 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00811",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00811 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00812",
+          "name": "Roller / Wheel Set",
+          "category": "Hardware",
+          "unit": "set",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00812 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00813",
+          "name": "Bottom Brush Seal",
+          "category": "Seal",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00813 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "DOOR-001",
+      "name": "Single Leaf Swing Door (Casement)",
+      "type": "Swing Door",
+      "profileDepth_mm": 44,
+      "description": "Standard single-leaf swing door; 44 mm outer frame, outward or inward opening.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series DOOR-001",
+      "items": [
+        {
+          "partNumber": "CNAL00101",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00101 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00102",
+          "name": "Threshold / Frame Sill",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00102 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00103",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00103 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00104",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00104 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00105",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00105 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00106",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00106 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00107",
+          "name": "Door Leaf Left Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00107 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00108",
+          "name": "Door Leaf Right Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00108 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00109",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00109 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00110",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00110 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "DOOR-002",
+      "name": "Double Leaf French Door",
+      "type": "Swing Door",
+      "profileDepth_mm": 44,
+      "description": "Double-leaf French door; 44 mm frame with centre astragal, outward opening.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series DOOR-002",
+      "items": [
+        {
+          "partNumber": "CNAL00201",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00201 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00202",
+          "name": "Threshold / Frame Sill",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00202 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00203",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00203 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00204",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00204 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00205",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00205 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00206",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00206 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00207",
+          "name": "Door Leaf Left Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00207 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00208",
+          "name": "Door Leaf Right Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00208 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00209",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00209 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00210",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00210 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "DOOR-003",
+      "name": "Entrance Door Standard",
+      "type": "Swing Door",
+      "profileDepth_mm": 50,
+      "description": "Flush-panel entrance door; 50 mm frame with thermal break, multi-point lock ready.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series DOOR-003",
+      "items": [
+        {
+          "partNumber": "CNAL00301",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00301 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00302",
+          "name": "Threshold / Frame Sill",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00302 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00303",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00303 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00304",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00304 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00305",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00305 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00306",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00306 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00307",
+          "name": "Door Leaf Left Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00307 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00308",
+          "name": "Door Leaf Right Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00308 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00309",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00309 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00310",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00310 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "DOOR-004",
+      "name": "Heavy Duty Entrance Door 70mm",
+      "type": "Swing Door",
+      "profileDepth_mm": 70,
+      "description": "Commercial-grade entrance door; 70 mm frame, 45 mm door leaf, panic hardware ready.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series DOOR-004",
+      "items": [
+        {
+          "partNumber": "CNAL00401",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00401 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00402",
+          "name": "Threshold / Frame Sill",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00402 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00403",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00403 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00404",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00404 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00405",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00405 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00406",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00406 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00407",
+          "name": "Door Leaf Left Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00407 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00408",
+          "name": "Door Leaf Right Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00408 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00409",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00409 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00410",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00410 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "DOOR-005",
+      "name": "Pivot Door 80mm",
+      "type": "Swing Door",
+      "profileDepth_mm": 80,
+      "description": "Off-centre pivot door; 80 mm frame, floor/ceiling pivot hardware, large leaf.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series DOOR-005",
+      "items": [
+        {
+          "partNumber": "CNAL00501",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00501 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00502",
+          "name": "Threshold / Frame Sill",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00502 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00503",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00503 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00504",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00504 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00505",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00505 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00506",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00506 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00507",
+          "name": "Door Leaf Left Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00507 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00508",
+          "name": "Door Leaf Right Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00508 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00509",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00509 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00510",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00510 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "DOOR-006",
+      "name": "Bi-fold Door 44mm",
+      "type": "Swing Door",
+      "profileDepth_mm": 44,
+      "description": "Bi-fold folding door set; 44 mm frame, 2-4 leaf configurations, bottom-guide track.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series DOOR-006",
+      "items": [
+        {
+          "partNumber": "CNAL00601",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00601 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00602",
+          "name": "Threshold / Frame Sill",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00602 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00603",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00603 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00604",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00604 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00605",
+          "name": "Door Leaf Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00605 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00606",
+          "name": "Door Leaf Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00606 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00607",
+          "name": "Door Leaf Left Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00607 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00608",
+          "name": "Door Leaf Right Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00608 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00609",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00609 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00610",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00610 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "PROJ-001",
+      "name": "Awning / Projecting Window 30mm",
+      "type": "Projecting",
+      "profileDepth_mm": 30,
+      "description": "Outward-opening awning (top-hung) window; 30 mm section with friction-stay arm slots.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series PROJ-001",
+      "items": [
+        {
+          "partNumber": "CNAL00101",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00101 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00102",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00102 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00103",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00103 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00104",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00104 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00105",
+          "name": "Ventilator / Vent Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00105 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00106",
+          "name": "Ventilator Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00106 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00107",
+          "name": "Ventilator Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00107 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00108",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00108 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00109",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00109 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "PROJ-002",
+      "name": "Hopper Window 25mm",
+      "type": "Projecting",
+      "profileDepth_mm": 25,
+      "description": "Inward-opening hopper (bottom-hung) window; 25 mm section, for basement or high-level ventilation.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series PROJ-002",
+      "items": [
+        {
+          "partNumber": "CNAL00201",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00201 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00202",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00202 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00203",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00203 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00204",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00204 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00205",
+          "name": "Ventilator / Vent Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00205 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00206",
+          "name": "Ventilator Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00206 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00207",
+          "name": "Ventilator Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00207 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00208",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00208 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00209",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00209 with ERPNext item code"
+        }
+      ]
+    },
+    {
+      "id": "PROJ-003",
+      "name": "Adjustable Louvre / Jalousie",
+      "type": "Projecting",
+      "profileDepth_mm": 25,
+      "description": "Multi-blade adjustable louvre system; 25 mm frame, tiltable glass or aluminium blades.",
+      "imageUrl": null,
+      "_stub": true,
+      "_note": "STUB: imageUrl to be populated from ERPNext item master for series PROJ-003",
+      "items": [
+        {
+          "partNumber": "CNAL00301",
+          "name": "Frame Top Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00301 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00302",
+          "name": "Frame Bottom Rail",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00302 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00303",
+          "name": "Frame Left Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00303 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00304",
+          "name": "Frame Right Jamb",
+          "category": "Frame",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00304 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00305",
+          "name": "Ventilator / Vent Top Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00305 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00306",
+          "name": "Ventilator Bottom Rail",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00306 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00307",
+          "name": "Ventilator Stile",
+          "category": "Shutter",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00307 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00308",
+          "name": "Beading Small",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00308 with ERPNext item code"
+        },
+        {
+          "partNumber": "CNAL00309",
+          "name": "Beading Large",
+          "category": "Bead",
+          "unit": "m",
+          "imageUrl": null,
+          "_stub": true,
+          "_note": "STUB: Replace partNumber CNAL00309 with ERPNext item code"
+        }
+      ]
+    }
+  ]
+}
