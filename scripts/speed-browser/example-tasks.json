@@ -1,0 +1,23 @@
+[
+  {
+    "name": "button@desktop",
+    "url": "file://./demo.html",
+    "viewport": { "width": 900, "height": 600 },
+    "actions": [{ "click": "#btn" }, { "click": "#btn" }, { "click": "#btn" }],
+    "expect": { "selector": "#count", "equals": "3" }
+  },
+  {
+    "name": "button@mobile",
+    "url": "file://./demo.html",
+    "device": "iPhone 13",
+    "actions": [{ "click": "#btn" }, { "click": "#btn" }, { "click": "#btn" }],
+    "expect": { "selector": "#count", "equals": "3" }
+  },
+  {
+    "name": "form@desktop",
+    "url": "file://./form.html",
+    "viewport": { "width": 900, "height": 600 },
+    "actions": [{ "type": ["#name", "Raju"] }, { "click": "#go" }],
+    "expect": { "selector": "#out", "equals": "👋 Hello, Raju!" }
+  }
+]
