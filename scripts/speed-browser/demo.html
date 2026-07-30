@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Button Live Test Demo</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; min-height: 100vh;
+         display: grid; place-items: center; background: #0f172a; color: #e2e8f0; }
+  .card { background: #1e293b; padding: 40px; border-radius: 16px; text-align: center;
+          box-shadow: 0 10px 40px rgba(0,0,0,.4); width: min(90vw, 420px); }
+  h1 { font-size: 20px; margin: 0 0 24px; }
+  button { font-size: 18px; padding: 14px 28px; border: 0; border-radius: 10px;
+           background: #6366f1; color: white; cursor: pointer; }
+  button:hover { background: #4f46e5; }
+  #count { font-size: 48px; font-weight: 700; margin: 20px 0; color: #818cf8; }
+  #msg { min-height: 24px; color: #34d399; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>🔘 Button Live-Test Demo</h1>
+    <div id="count">0</div>
+    <button id="btn" onclick="tap()">Tap me</button>
+    <p id="msg"></p>
+  </div>
+<script>
+  let n = 0;
+  function tap() {
+    n++;
+    document.getElementById('count').textContent = n;
+    document.getElementById('msg').textContent = n >= 3 ? '✅ Button working!' : '';
+  }
+</script>
+</body>
+</html>
