@@ -6,21 +6,25 @@
 #
 # Ye script ek Linux VM (Google Compute Engine, etc.) par Playwright MCP
 # ko HTTP (streamable) mode me khada karti hai, taaki Claude app se — phone
-# se bhi — remote browser testing ho sake. Reboot pe bhi chalta rahega
-# (systemd service).
+# se bhi — remote browser testing ho sake. Reboot pe bhi chalta rahega.
 #
-# This stands up Playwright MCP in HTTP mode on a Linux VM so the Claude
-# app (desktop or phone) can connect over the network and drive a real
-# headless Chromium. It survives reboots via a systemd service.
+# SECURITY MODEL (secret-URL + auto-open firewall):
+#   - MCP sirf localhost par sunta hai (bahar se seedhe nahi milta).
+#   - Saamne Caddy reverse-proxy hai jo SIRF ek lambe secret path ko
+#     forward karta hai; baaki sab 404. Bina secret URL koi ghus nahi sakta.
+#   - Firewall port apne-aap khul jaata hai (0.0.0.0/0), isliye phone ka IP
+#     badle tab bhi firewall kabhi chhoona nahi padta — poori tarah automatic.
+#   Connector URL:  http://<VM-IP>:<PORT>/<secret>/mcp
 #
 # Tested on: Debian/Ubuntu (apt). Run as a normal sudo-capable user, NOT root.
 # =====================================================================
 set -euo pipefail
 
-# --- Config (override via env: PORT=9000 bash setup.sh) ---------------
+# --- Config (override via env: PORT=443 bash setup.sh) ----------------
 PW_MCP_VERSION="${PW_MCP_VERSION:-0.0.78}"   # match repo's .mcp.json
-PORT="${PORT:-8931}"
-HOST="${HOST:-0.0.0.0}"
+PORT="${PORT:-8931}"                         # public port (Caddy)
+INTERNAL_PORT="${INTERNAL_PORT:-8930}"       # MCP, localhost-only
+FW_RULE="pw-mcp-${PORT}"
 
 if [[ "${EUID}" -eq 0 ]]; then
   echo "!! Isko root se mat chalao. Ek normal (sudo-capable) user se chalao."
@@ -29,7 +33,7 @@ if [[ "${EUID}" -eq 0 ]]; then
   exit 1
 fi
 
-echo "==> 1/6  System update + Node install"
+echo "==> 1/7  System update + Node install"
 sudo apt-get update -y
 if ! command -v node >/dev/null 2>&1; then
   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
@@ -37,31 +41,24 @@ if ! command -v node >/dev/null 2>&1; then
 fi
 echo "    node $(node -v)"
 
-echo "==> 2/6  Playwright MCP + Chromium install"
+echo "==> 2/7  Playwright MCP + Chromium install"
 sudo npm install -g "@playwright/mcp@${PW_MCP_VERSION}"
-# Chromium + system deps (headless). This downloads the browser for the
-# invoking user; the systemd service below runs as this same user so it
-# finds the same browser cache.
+# Chromium + system deps (headless). Downloads for the invoking user; the
+# systemd service below runs as this same user so it finds the same cache.
 npx --yes playwright install --with-deps chromium
 
-echo "==> 3/6  Token banao (optional — network firewall is the real guard)"
-# NOTE: @playwright/mcp ka HTTP endpoint is version me bearer-token auth
-# enforce nahi karta. Asli security = GCP firewall se source IP restrict
-# karna (step 5). Ye token sirf ek label/marker hai.
-#
-# @playwright/mcp's HTTP endpoint does NOT enforce token auth in this
-# version. The real protection is restricting the firewall source range
-# (step 5) — treat this token as a label, not a security boundary.
-TOKEN="$(head -c 24 /dev/urandom | base64 | tr -dc 'A-Za-z0-9' | head -c 32)"
-echo "${TOKEN}" > "${HOME}/pw-mcp-token.txt"
-chmod 600 "${HOME}/pw-mcp-token.txt"
-echo "    Token saved: ${HOME}/pw-mcp-token.txt"
+echo "==> 3/7  Secret URL banao (yahi aapki asli suraksha hai)"
+# Long, URL-safe, unguessable path segment. Isi ke bina koi endpoint tak
+# nahi pahunch sakta. This secret IS the auth — keep it private.
+SECRET="$(head -c 48 /dev/urandom | base64 | tr -dc 'A-Za-z0-9' | head -c 40)"
+echo "${SECRET}" > "${HOME}/pw-mcp-secret.txt"
+chmod 600 "${HOME}/pw-mcp-secret.txt"
+echo "    Secret saved: ${HOME}/pw-mcp-secret.txt"
 
-echo "==> 4/6  systemd service (auto-restart + reboot pe bhi chale)"
-MCP_BIN="$(command -v mcp-server-playwright || echo "")"
+echo "==> 4/7  MCP systemd service (localhost-only, auto-restart, boot pe bhi)"
 sudo tee /etc/systemd/system/pw-mcp.service >/dev/null << UNIT
 [Unit]
-Description=Playwright MCP (Trisshul) — HTTP mode
+Description=Playwright MCP (Trisshul) — localhost backend
 After=network-online.target
 Wants=network-online.target
 
@@ -69,7 +66,7 @@ Wants=network-online.target
 Type=simple
 User=${USER}
 Environment=NODE_OPTIONS=--max-old-space-size=1024
-ExecStart=/usr/bin/npx --yes @playwright/mcp@${PW_MCP_VERSION} --headless --host ${HOST} --port ${PORT}
+ExecStart=/usr/bin/npx --yes @playwright/mcp@${PW_MCP_VERSION} --headless --host 127.0.0.1 --port ${INTERNAL_PORT}
 Restart=always
 RestartSec=3
 
@@ -80,36 +77,71 @@ UNIT
 sudo systemctl daemon-reload
 sudo systemctl enable pw-mcp
 sudo systemctl restart pw-mcp
+
+echo "==> 5/7  Caddy reverse-proxy (sirf secret path ko maane)"
+if ! command -v caddy >/dev/null 2>&1; then
+  sudo apt-get install -y debian-keyring debian-archive-keyring apt-transport-https curl gnupg
+  curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' \
+    | sudo gpg --batch --yes --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+  curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' \
+    | sudo tee /etc/apt/sources.list.d/caddy-stable.list >/dev/null
+  sudo apt-get update -y
+  sudo apt-get install -y caddy
+fi
+
+# Only /<SECRET>/* is forwarded (prefix stripped → backend sees /mcp).
+# Everything else → 404. So the public port is useless without the secret.
+sudo tee /etc/caddy/Caddyfile >/dev/null << CADDY
+:${PORT} {
+	handle_path /${SECRET}/* {
+		reverse_proxy 127.0.0.1:${INTERNAL_PORT}
+	}
+	handle {
+		respond "Not found" 404
+	}
+}
+CADDY
+
+sudo systemctl enable caddy
+sudo systemctl restart caddy
 sleep 3
-sudo systemctl status pw-mcp --no-pager | head -n 8 || true
+echo "    --- pw-mcp ---"; sudo systemctl status pw-mcp --no-pager | head -n 4 || true
+echo "    --- caddy  ---"; sudo systemctl status caddy  --no-pager | head -n 4 || true
 
-echo "==> 5/6  Firewall — port ${PORT} kholo (GCP)"
-cat << FW
-    GCP par port ${PORT} kholne ke liye (aur SIRF apne IP se — recommended):
+echo "==> 6/7  Firewall auto-open (port ${PORT} → 0.0.0.0/0; secret URL guards it)"
+if command -v gcloud >/dev/null 2>&1; then
+  if gcloud compute firewall-rules describe "${FW_RULE}" >/dev/null 2>&1; then
+    gcloud compute firewall-rules update "${FW_RULE}" \
+      --allow="tcp:${PORT}" --source-ranges=0.0.0.0/0 \
+      || echo "    !! firewall update failed (permissions?) — kholni padegi manually"
+  else
+    gcloud compute firewall-rules create "${FW_RULE}" \
+      --allow="tcp:${PORT}" --source-ranges=0.0.0.0/0 \
+      --description="Playwright MCP (Trisshul) — secret-URL protected" \
+      || echo "    !! firewall create failed (permissions?) — kholni padegi manually"
+  fi
+else
+  echo "    gcloud nahi mila. Port manually kholo:"
+  echo "      gcloud compute firewall-rules create ${FW_RULE} \\"
+  echo "        --allow=tcp:${PORT} --source-ranges=0.0.0.0/0"
+fi
 
-      MY_IP=\$(curl -s ifconfig.me)
-      gcloud compute firewall-rules create pw-mcp-\${PORT} \\
-        --allow=tcp:${PORT} \\
-        --source-ranges=\${MY_IP}/32 \\
-        --description="Playwright MCP (Trisshul) — restrict to my IP"
-
-    Sabko khula chahiye to --source-ranges=0.0.0.0/0 (NOT recommended —
-    koi bhi aapke browser ko drive kar sakta hai).
-FW
-
-echo "==> 6/6  Ho gaya! / Done"
+echo "==> 7/7  Ho gaya! / Done"
 IP="$(curl -s ifconfig.me || echo "<VM-EXTERNAL-IP>")"
 cat << DONE
 ======================================================
   MCP URL (Claude app > Connectors me daalo / add here):
-     http://${IP}:${PORT}/mcp
+     http://${IP}:${PORT}/${SECRET}/mcp
 
-  Token (agar kabhi chahiye / if ever needed):
-     $(cat "${HOME}/pw-mcp-token.txt")
+  Ye URL hi aapki chaabi hai — kisi ke saath share mat karo.
+  This full URL (with the secret) IS the credential — keep it private.
+
+  Secret file:  ${HOME}/pw-mcp-secret.txt
 
   Useful:
-     sudo systemctl status pw-mcp     # service state
-     sudo journalctl -u pw-mcp -f     # live logs
-     sudo systemctl restart pw-mcp    # restart
+     sudo systemctl status pw-mcp caddy   # service state
+     sudo journalctl -u pw-mcp -f         # MCP logs
+     sudo journalctl -u caddy -f          # proxy logs
+     sudo systemctl restart pw-mcp caddy  # restart both
 ======================================================
 DONE
